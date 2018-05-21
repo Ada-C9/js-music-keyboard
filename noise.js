@@ -79,11 +79,17 @@ $(document).ready( function() {
     })
   }
 
-  // $('body').keydown( function(event) {
-  //   if (event.keyCode === 66 ) {
-  //     $('#bAudio').get()[0].play();
-  //   }
-  // });
+  const CODES = [ {'note': 'a', 'code': 65}, {'note': 'b', 'code': 66}, {'note': 'c', 'code': 67}, {'note': 'd', 'code': 68}, {'note': 'e', 'code': 69}, {'note': 'f', 'code': 70}, {'note': 'g', 'code': 71}]
+
+  $('body').keydown( function(event) {
+    for (let i = 0; i < CODES.length; i++) {
+      let code = CODES[i]
+      if (event.keyCode === code.code) {
+        $(`#${code.note}Audio`).get()[0].play();
+      }
+
+    }
+  });
 
 
 });
