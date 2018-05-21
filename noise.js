@@ -1,3 +1,9 @@
 $(document).ready( function() {
-  // your code here
+
+  $('.c').click(function() {
+    // alert('clicked on c');
+    $('#cAudio').get(0).load();
+    $('#cAudio').get(0).play();
+    })
+
 });
