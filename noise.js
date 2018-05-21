@@ -1,3 +1,7 @@
 $(document).ready( function() {
-  // your code here
+
+  $('.note.c').click( function() {
+    $('#cAudio')[0].play();
+  })
+
 });
