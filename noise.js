@@ -10,4 +10,8 @@ $(document).ready( function() {
       audio.load();
       audio.play();
     }
+    $('body').keydown(function(event) {
+      let tone = event.key.toLowerCase();
+      play(tone);
+    });
 });
