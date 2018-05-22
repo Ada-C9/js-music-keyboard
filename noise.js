@@ -4,10 +4,9 @@ let play  = function(key) {
 };
 
 $(document).ready( function() {
-
   $('.instrument button').click(function() {
-    let key = $(this).htmls();
-    let note = $('#' + key + 'Audio')
+    let key = $(this).html() + 'Audio';
+    let note = document.getElementById(key);
     play(note);
-  }
+  });
 });
