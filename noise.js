@@ -3,7 +3,7 @@ $(document).ready(() => {
     $('#' + this.innerHTML + 'Audio')[0].play();
   });
 
-  $('.instrument').keypress( function(event) {
+  $('body').keypress( function(event) {
     $('#' + event.key + 'Audio')[0].play();
-  });  
+  });
 })
