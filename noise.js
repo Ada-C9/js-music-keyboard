@@ -12,11 +12,3 @@ $(document).ready( function() {
     $(`#${event.key}Audio`).get(0).play();
   });
 });
-
-
-
-// console.log($(this)) // button.note.c
-// console.log($($(this).html())) // c
-// console.log($(`#${$(this).html()}Audio`)) // "#cAudio"
-// console.log($(`#${$(this).html()}Audio`).get(0)) // <audio id="cAudio">
-// // gets the whole section with the id cAudio
