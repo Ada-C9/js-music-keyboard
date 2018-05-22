@@ -4,9 +4,15 @@ let play  = function(key) {
 };
 
 $(document).ready( function() {
+  
   $('.instrument button').click(function() {
-    let key = $(this).html() + 'Audio';
-    let note = document.getElementById(key);
+    let note = document.getElementById($(this).html() + 'Audio');
     play(note);
   });
+
+  $('body').keydown(function(event) {
+    let note = document.getElementById(event.key + 'Audio');
+    play(note);
+  });
+
 });
