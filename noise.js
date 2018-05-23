@@ -1,9 +1,11 @@
 $(document).ready(() => {
   $('.instrument').on('click', 'button', function() {
+    // load
     $('#' + this.innerHTML + 'Audio')[0].play();
   });
 
   $('body').keypress( function(event) {
-    $('#' + event.key + 'Audio')[0].play();
+    // load 
+    $('#' + event.key + 'Audio')[0];
   });
 })
